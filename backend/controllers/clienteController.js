@@ -43,16 +43,15 @@ const clienteController = {
       }
 
       res.json(cliente);
-      
+
     } catch (error) {
       console.log(error);
       res.status(500).json({ msg: "Erro get Cliente" });
     }
   }
 
-
-
-
 };
 
 module.exports = clienteController;
+
+//testando git
