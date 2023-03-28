@@ -1,13 +1,7 @@
-POST http://localhost:3000/api/clientes
+POST http://localhost:3000/api/exercicios
 Content-Type: application/json
 
 {
-  "nome": "carolsheipada",
-  "idade": 19,
-  "peso": 65,
-  "altura": 163,
-  "username": "carolsheipada",
-  "password": "senhatop",
-  "exercicios": [],
-  "refeicoes": []
+  "type": "musculação",
+  "calories": "320"
 }

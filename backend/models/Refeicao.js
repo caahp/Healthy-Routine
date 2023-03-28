@@ -10,6 +10,10 @@ const refeicaoSchema = new Schema({
         type: Number,
         required: true,
     },
+    protein: {
+        type: Number,
+        required: true,
+    },
     carb: {
         type: Number,
         required: true,
@@ -17,11 +21,7 @@ const refeicaoSchema = new Schema({
     fat: {
         type: Number,
         required: true,
-    },
-    protein: {
-        type: Number,
-        required: true,
-    },
+    }
 },
     {timestamps: true}
 );

@@ -3,7 +3,6 @@ const Cliente  = require("../models/Cliente");
 const clienteController = {
   create: async (req, res) => {
     try {
-    
       const cliente = {
         username: req.body.username,
         password: req.body.password,
@@ -53,5 +52,3 @@ const clienteController = {
 };
 
 module.exports = clienteController;
-
-//testando git
