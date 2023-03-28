@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Healthy Routine</title>
+	<style>
+		body {
+			background-color: #2b2690;
+			font-family: Arial, sans-serif;
+			color: #000000;
+		}
+
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			max-width: 400px;
+			margin: 50px auto;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+
+		input[type="text"], input[type="password"], input[type="date"], input[type="number"] {
+			display: block;
+			margin-bottom: 10px;
+			padding: 10px;
+			width: 100%;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+		.password-input {
+  		position: relative;
+		}
+
+		.password-toggle {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 10px;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		font-size: 18px;
+		color: #666;
+		}
+
+	</style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<body>
+	<form action="inicio.html">
+		<h2>Me conte sobre você</h2>
+		<label for="name">Nome:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="birthdate">Data de Nascimento:</label>
+		<input type="date" id="birthdate" name="birthdate" required>
+
+		<label for="weight">Peso (kg):</label>
+		<input type="number" id="weight" name="weight" min="0" step="0.01" required>
+
+		<label for="height">Altura (cm):</label>
+		<input type="number" id="height" name="height" min="0" step="0.01" required>
+
+		<label for="username">Usuário:</label>
+		<input type="text" id="username" name="username" required>
+
+		<label for="password">Senha:</label>
+		<div class="password-input">
+		<input type="password" id="password" name="password" required>
+		<button type="button" class="password-toggle"><i class="fas fa-eye"></i></button>
+		</div>
+
+
+		<input type="submit" value="Cadastrar">
+
+		<p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+	</form>
+	<script src="../scripts/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Healthy Routine</title>
+	<style>
+		body {
+			background-color: #2b2690;
+			font-family: Arial, sans-serif;
+			color: #000000;
+		}
+
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			max-width: 400px;
+			margin: 50px auto;
+		}
+
+		input[type="text"], input[type="password"] {
+			display: block;
+			margin-bottom: 10px;
+			padding: 10px;
+			width: 100%;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+		img {
+  		display: block;
+  		margin: 0 auto;
+	}
+
+	
+	</style>
+</head>
+<body>
+	<form action="#">
+		<img src="../images/icon.png" alt="Imagem de fundo" width="60%">
+
+		<h2>Bem vindo(a)!!!</h2>
+		<label for="username">Usuário:</label>
+		<input type="text" id="username" name="username" required>
+
+		<label for="password">Senha:</label>
+		<input type="password" id="password" name="password" required>
+
+		<input type="submit" value="Entrar">
+
+		<p>Não tem uma conta ainda? <a href="cadastro.html">Cadastre-se</a></p>
+	</form>
+</body>
+</html>
