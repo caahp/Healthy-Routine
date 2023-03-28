@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Tela de Início</title>
-	<style>
-		body {
-			background-color: #f5f5f5;
-			font-family: Arial, sans-serif;
-			color: #333333;
-		}
-
-		h1 {
-			font-size: 36px;
-			margin-top: 50px;
-			text-align: center;
-		}
-
-		p {
-			font-size: 18px;
-			text-align: center;
-			margin-top: 20px;
-		}
-
-		a {
-			display: block;
-			text-align: center;
-			margin-top: 20px;
-			font-size: 18px;
-			color: #333333;
-			text-decoration: none;
-			border: 2px solid #333333;
-			padding: 10px;
-			border-radius: 5px;
-			width: 200px;
-			margin: 0 auto;
-		}
-
-		a:hover {
-			background-color: #333333;
-			color: #f5f5f5;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MyFitnessPal - Início</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Bem-vindo(a)!</h1>
-	<p>Você está na tela de início do nosso site. Aqui você pode encontrar tudo o que precisa para manter uma rotina saudável e equilibrada.</p>
-	<a href="#">Comece agora</a>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Início</a></li>
+				<li><a href="#">Comunidade</a></li>
+				<li><a href="#">Mais</a></li>
+			</ul>
+			<a href="login.html" class="login">Entrar</a>
+
+		</nav>
+		<div class="hero">
+			<h1>Mantenha-se em forma e saudável com o My Healthy Routine</h1>
+			<p>Registre suas refeições e exercícios</p>
+			<a href="cadastro.html" class="cta">Cadastre-se agora</a>
+		</div>
+	</header>
+
+	<section class="features">
+		<h2>Recursos Principais</h2>
+		<div class="feature">
+			<img src="../images/meal-tracking.png" alt="Rastreamento de Refeições">
+			<h3>Rastreamento de Refeições</h3>
+			<p>Registre suas refeições diárias para acompanhar sua ingestão de calorias e nutrientes</p>
+		</div>
+		<div class="feature">
+			<img src="../images/exercise-tracking.png" alt="Rastreamento de Exercícios">
+			<h3>Rastreamento de Exercícios</h3>
+			<p>Registre seus exercícios diários para acompanhar suas calorias queimadas e tempo de atividade</p>
+		</div>
+		<div class="feature">
+			<img src="../images/community.png" alt="Comunidade">
+			<h3>Comunidade</h3>
+			<p>Conecte-se com outras pessoas que têm objetivos de saúde semelhantes e receba apoio e motivação</p>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<h2>Depoimentos</h2>
+		<div class="testimonial">
+			<p>"O My Healthy Routine me ajudou a perder 10kg e me tornar mais consciente da minha dieta e exercícios. Eu recomendo!"</p>
+			<h4>João Silva</h4>
+			<span>São Paulo, SP</span>
+		</div>
+		<div class="testimonial">
+			<p>"Estou muito feliz com o My Healthy Routine. Me ajudou a manter minha alimentação saudável e me deu uma perspectiva melhor sobre o valor nutricional dos alimentos."</p>
+			<h4>Julia Santos</h4>
+			<span>Rio de Janeiro, RJ</span>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 My Healthy Routine. Todos os direitos reservados.</p>
+		<ul>
+			<li><a href="#">Termos de Serviço</a></li>
+			<li><a href="#">Ajuda</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</footer>
 </body>
 </html>
