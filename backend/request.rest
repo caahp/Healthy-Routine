@@ -1,7 +1,32 @@
-POST http://localhost:3000/api/exercicios
+POST http://localhost:3000/api/clientes
 Content-Type: application/json
 
 {
-  "type": "musculação",
-  "calories": "320"
-}
+  "username": "caahp",
+  "password": "1234",
+  "nome": "Carol",
+  "idade": 20,
+  "peso": 65,
+  "altura": 163,
+  "exercicios": [
+    {
+      "type": "corrida",
+      "calories": 150
+    }
+  ],
+  "refeicoes": [
+    {
+      "type": "frango",
+      "calories": 180,
+      "protein": 32,
+      "carb": 2,
+      "fat": 1,
+    }
+  ]
+};
+
+###
+GET http://localhost:3000/api/clientes
+
+###
+GET http://localhost:3000/api/clientes/64220fbde7fe4e0c442e2205

@@ -26,6 +26,7 @@ const clienteController = {
   getAll: async (req, res) => {
     try {
       const clientes = await Cliente.find();
+      res.json(clientes);
     } catch (error) {
       console.log(error);
       res.status(500).json({ msg: "Erro no getAll" });
@@ -36,10 +37,6 @@ const clienteController = {
     try {
       const id = req.params.id;
       const cliente =  await Cliente.findById(id);
-
-      if (!cliente) {
-        res.status(404).json({ msg: "Cliente não encontrado" });
-      }
 
       res.json(cliente);
 
