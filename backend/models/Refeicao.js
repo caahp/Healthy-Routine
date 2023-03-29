@@ -2,23 +2,19 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const refeicaoSchema = new Schema({
-    type: {
+    nome: {
         type: String,
         required: true,
     },
-    calories: {
-        type: Number,
+    tipo: {
+        type: String,
         required: true,
     },
-    protein: {
-        type: Number,
+    hora: {
+        type: String,
         required: true,
     },
-    carb: {
-        type: Number,
-        required: true,
-    },
-    fat: {
+    calorias: {
         type: Number,
         required: true,
     }
@@ -29,6 +25,5 @@ const refeicaoSchema = new Schema({
 const Refeicao = mongoose.model("refeicao", refeicaoSchema);
 
 module.exports = {
-    Refeicao,
-    refeicaoSchema,
+    Refeicao
 }

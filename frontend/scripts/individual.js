@@ -1,12 +1,3 @@
-const togglePassword = document.querySelector('.password-toggle');
-const password = document.querySelector('#password');
-
-togglePassword.addEventListener('click', function(e) {
-  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-  password.setAttribute('type', type);
-  this.querySelector('i').classList.toggle('fa-eye-slash');
-});
-
 const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -32,5 +23,3 @@ form.addEventListener('submit', (event) => {
     console.log(error);
   });
 });
-
-
