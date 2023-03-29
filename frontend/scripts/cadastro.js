@@ -21,6 +21,7 @@ form.addEventListener('submit', (event) => {
     "exercicios": [],
     "refeicoes": [],
   })
+  
   .then(function (response) {
     console.log(response);
     alert('Cliente cadastrado!');
