@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Healthy Routine</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html" class="inicio">Início</a></li>
+            </ul>
+        </nav>
+        <div class="header-image">
+            <img src="../images/icon.png" alt="Icon">
+        </div>
+        <div class="hero">
+            <h1>Registre sua rotina!</h1>
+        </div>
+        
+    </header>
+    <section class="progress">
+        <h2>Meu Progresso</h2>
+        <div class="progress-container">
+            <div class="progress-item">
+                <h3>Peso</h3>
+                <p>65kg</p>
+                <a href="#">Atualizar</a>
+            </div>
+            <div class="progress-item">
+                <h3>IMC</h3>
+                <p>23.5</p>
+                <a href="#">Atualizar</a>
+            </div>
+            <div class="progress-item">
+                <h3>Gordura Corporal</h3>
+                <p>20%</p>
+                <a href="#">Atualizar</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="log">
+        <h2>Registro de Refeições</h2>
+        <form action="#" method="post">
+            <label for="meal-name">Nome da Refeição</label>
+            <input type="text" id="meal-name" name="meal-name" required>
+            <label for="meal-type">Tipo de Refeição</label>
+            <select id="meal-type" name="meal-type" required>
+                <option value="">Selecione uma opção</option>
+                <option value="breakfast">Café da manhã</option>
+                <option value="lunch">Almoço</option>
+                <option value="dinner">Jantar</option>
+                <option value="snack">Lanche</option>
+            </select>
+            <label for="meal-date">Data e Hora</label>
+            <input type="datetime-local" id="meal-date" name="meal-date" required>
+            <label for="meal-calories">Calorias</label>
+            <input type="number" id="meal-calories" name="meal-calories" required>
+            <button type="submit">Registrar Refeição</button>
+        </form>
+    </section>
+    
+    <section class="log">
+        <h2>Registro de Exercícios</h2>
+        <form action="#" method="post">
+            <label for="exercise-name">Nome do Exercício</label>
+            <input type="text" id="exercise-name" name="exercise-name" required>
+            <label for="exercise-type">Tipo de Exercício</label>
+            <select id="exercise-type" name="exercise-type" required>
+                <option value="">Selecione uma opção</option>
+                <option value="cardio">Cardio</option>
+                <option value="strength">Musculação</option>
+                <option value="swimming">Natação</option>
+                <option value="soccer">Futebol</option>
+            </select>
+            <label for="exercise-date">Data e Hora</label>
+            <input type="datetime-local" id="exercise-date" name="exercise-date" required>
+            <label for="exercise-duration">Duração (minutos)</label>
+            <input type="number" id="exercise-duration" name="exercise-duration" required>
+            <label for="exercise-calories">Calorias Queimadas</label>
+            <input type="number" id="exercise-calories" name="exercise-calories" required>
+            <button type="submit">Registrar Exercício</button>
+        </form>
+        <div class="no-diet">
+            <p>Não tem uma dieta cadastrada? <a href="cadDieta.html">Cadastre aqui</a></p>
+          </div>
+    </section>
