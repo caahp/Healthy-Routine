@@ -4,6 +4,6 @@ const router = require("express").Router();
 const usuarioController = require("../controllers/usuarioController");
 
 //Funções
-router.route("/services").post((req,res) => usuarioController.create(req,res));
+router.route("/").post((req,res) => usuarioController.create(req,res));
 
 module.exports = router;

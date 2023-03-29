@@ -4,6 +4,6 @@ const router = require("express").Router();
 const refeicaoController = require("../controllers/refeicaoController");
 
 //Funções
-router.route("/refeicoes").post((req,res) => refeicaoController.create(req,res));
+router.route("/").post((req,res) => refeicaoController.create(req,res));
 
 module.exports = router;

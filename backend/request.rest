@@ -4,26 +4,13 @@ Content-Type: application/json
 {
   "username": "caahp",
   "password": "1234",
-  "nome": "Carol",
-  "idade": 20,
+  "nome": "carol",
+  "idade": 19,
   "peso": 65,
   "altura": 163,
-  "exercicios": [
-    {
-      "type": "corrida",
-      "calories": 150
-    }
-  ],
-  "refeicoes": [
-    {
-      "type": "frango",
-      "calories": 180,
-      "protein": 32,
-      "carb": 2,
-      "fat": 1,
-    }
-  ]
-};
+  "exercicios": [],
+  "refeicoes": [],
+}
 
 ###
 GET http://localhost:3000/api/clientes

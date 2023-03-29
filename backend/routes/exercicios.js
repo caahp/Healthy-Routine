@@ -4,6 +4,6 @@ const router = require("express").Router();
 const exercicioController = require("../controllers/exercicioController");
 
 //Funções
-router.route("/exercicios").post((req,res) => exercicioController.create(req,res));
+router.route("/").post((req,res) => exercicioController.create(req,res));
 
 module.exports = router;
