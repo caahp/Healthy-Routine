@@ -1,11 +1,15 @@
-POST http://localhost:3000/api/exercicios
+POST http://localhost:3000/api/clientes
 Content-Type: application/json
 
 {
-  "tipo": "Musculação",
-	"hora": "22:00",
-	"duracao": 100,
-	"calorias": 300
+  "username": "caahp",
+  "password": "1234",
+  "nome": "carol",
+  "idade": 19,
+  "peso": 65,
+  "altura": 163,
+  "exercicios": [],
+  "refeicoes": []
 }
 
 ###

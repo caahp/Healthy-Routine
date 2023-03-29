@@ -23,10 +23,10 @@ const clienteSchema = new Schema({
         required: true,
     },
     exercicios: {
-        type: [exercicioSchema],
+        type: [],
     },
     refeicoes: {
-        type: [refeicaoSchema],
+        type: [],
     }
 },
     {timestamps: true}
